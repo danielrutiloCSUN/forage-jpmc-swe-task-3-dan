@@ -56,8 +56,8 @@ class Graph extends Component<IProps, {}> {
   componentDidUpdate() {
     if (this.table) {
       this.table.update([
-        DataManipulator.generateRow(this.props.data),
-        ] as unknown as TableData);
+            DataManipulator.generateRow(this.props.data),
+        ] as unknown as string);
     }
   }
 }
